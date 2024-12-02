@@ -11,7 +11,7 @@ Note: The code will be made available upon request. Email tejasshinde2113@gmail.
 ## Demo
 
 
-![8ih4ya](https://github.com/ameyagidh/ImageProcessingSoftware/assets/65457905/cd0f7c07-29dc-4cff-9ab2-8dc0cb949689)
+![Alt Text](https://github.com/tejasshinde2113/Image-Manipulation-Software/raw/main/Manipulated%20Images/GUI1.jpg)
 
 **New Features:**
 1. **Compression**: Supports creating compressed versions of images using the script command "compress percentage image-name dest-image-name".
