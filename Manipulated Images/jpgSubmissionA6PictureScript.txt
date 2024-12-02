@@ -1,0 +1,44 @@
+# Load input image as boat
+load boat.jpg boat
+save boat.jpg boat
+
+# downsize
+
+downsize boat boatSmall 300 300
+save boatSmall.jpg boatSmall
+
+downsize boat boatSmall2 150 400
+save boatSmall2.jpg boatSmall2
+
+
+# Mask
+
+load boatMask.jpg boatMask
+
+blur boat boatMask boatBlurMask
+save boatBlurMask.jpg boatBlurMask
+
+
+sharpen boat boatMask boatSharpenMask
+save boatSharpenMask.jpg boatSharpenMask
+
+sepia boat boatMask boatSepiaMask
+save boatSepiaMask.jpg boatSepiaMask
+
+red-component boat boatMask boatRedComponentMask
+save boatRedComponentMask.jpg boatRedComponentMask
+
+blue-component boat boatMask boatBlueComponentMask
+save boatBlueComponentMask.jpg boatBlueComponentMask
+
+green-component boat boatMask boatGreenComponentMask
+save boatGreenComponentMask.jpg boatGreenComponentMask
+
+luma-component boat boatMask boatLumaComponentMask
+save boatLumaComponentMask.jpg boatLumaComponentMask
+
+value-component boat boatMask boatValueComponentMask
+save boatValueComponentMask.jpg boatValueComponentMask
+
+intensity-component boat boatMask boatIntensityComponentMask
+save boatIntensityComponentMask.jpg boatIntensityComponentMask

@@ -1,0 +1,193 @@
+# Load input image as boat
+load boat.jpg boat
+save boat.jpg boat
+
+# Darken boat by 40
+darken 40 boat boat-dark
+save boat-dark.jpg boat-dark
+
+# brighten boat by 40
+brighten 40 boat boat-brighten
+save boat-brighten.jpg boat-brighten
+
+# blur
+blur boat boat-blur
+save boat-blur.png boat-blur
+
+# blur with split
+blur boat boat-blur70 split 70
+save boat-blur70.jpg boat-blur70
+
+# sepia
+sepia boat boat-sepia
+save boat-sepia.png boat-sepia
+
+# sepia with split
+sepia boat boat-sepia70 split 70
+save boat-sepia70.jpg boat-sepia70
+
+# vertical-flip
+vertical-flip boat boat-vertical-flip
+save boat-vertical-flip.png boat-sepia
+
+# horizontal-flip
+horizontal-flip boat boat-horizontal-flip
+save boat-horizontal-flip.jpg boat-horizontal-flip
+
+# extract components
+red-component boat boat-red
+save boat-red.png boat-red
+
+red-component boat boat-red-split split 80
+save boat-red-split.png boat-red-split
+
+blue-component boat boat-blue
+save boat-blue.png boat-blue
+
+blue-component boat boat-blue-split split 49
+save boat-blue-split.png boat-blue-split
+
+green-component boat boat-green
+save boat-green.png boat-green
+
+green-component boat boat-green-split split 50
+save boat-green-split.png boat-green-split
+
+# sharpen
+sharpen boat boat-sharpen
+save boat-sharpen.jpg boat-sharpen
+
+sharpen boat boat-sharpen-split split 55
+save boat-sharpen-split.jpg boat-sharpen-split
+
+# Luma
+luma-component boat boat-luma
+save boat-luma.png boat-luma
+
+luma-component boat boat-luma-split split 70
+save boat-luma-split.png boat-luma-split
+
+# Intensity
+intensity-component boat boat-intensity
+save boat-intensity.png boat-intensity
+
+intensity-component boat boat-intensity-split split 67
+save boat-intensity-split.png boat-intensity-split
+
+# value-component
+value-component boat boat-value
+save boat-value.png boat-value
+
+# rgb-split
+rgb-split boat boat-Rsplit boat-Gsplit boat-Bsplit
+save boat-Rsplit.png boat-Rsplit
+save boat-Gsplit.png boat-Gsplit
+save boat-Bsplit.png boat-Bsplit
+
+# rgb-combine
+rgb-combine boat-combine boat-Rsplit boat-Gsplit boat-Bsplit
+save boat-combine.png boat-combine
+
+# histogram
+histogram boat boat-histogram
+save boat-histogram.png boat-histogram
+
+# color-correct
+color-correct boat boat-color-correct
+save boat-color-correct.png boat-color-correct
+histogram boat-color-correct boat-color-correct-histogram
+save boat-color-correct-histogram.png boat-color-correct-histogram
+
+# color-correct with split
+color-correct boat boat-color-correct-split split 70
+save boat-color-correct-split.png boat-color-correct-split
+histogram boat-color-correct-split boat-color-correct-histogram-split
+save boat-color-correct-histogram-split.png boat-color-correct-histogram-split
+
+# levels-adjust
+levels-adjust 20 100 255 boat boat-levels-adjust
+save boat-levels-adjust.png boat-levels-adjust
+histogram boat-levels-adjust boat-levels-adjust-histogram
+save boat-levels-adjust-histogram.png boat-levels-adjust-histogram
+
+# levels-adjust with split
+levels-adjust   20 100 255 boat boat-levels-adjust-split split 70
+save boat-levels-adjust-split.png boat-levels-adjust-split
+histogram boat-levels-adjust-split boat-levels-adjust-histogram-split
+save boat-levels-adjust-histogram-split.png boat-levels-adjust-histogram-split
+
+# compress
+compress 20 boat boat20
+save boat20.jpg boat20
+histogram boat20 boat20-histogram
+save boat20-histogram.png boat20-histogram
+
+compress 50 boat boat50
+save boat50.jpg boat50
+histogram boat50 boat50-histogram
+save boat50-histogram.png boat50-histogram
+
+
+compress 90 boat boat90
+save boat90.jpg boat90
+histogram boat90 boat90-histogram
+save boat90-histogram.png boat90-histogram
+
+
+# Load input image as boat
+load boat.jpg boat
+save boat.jpg boat
+
+# compress
+compress 20 boat boat20
+save boat20.jpg boat20
+histogram boat20 boat20-histogram
+save boat20-histogram.png boat20-histogram
+
+compress 50 boat boat50
+save boat50.jpg boat50
+histogram boat50 boat50-histogram
+save boat50-histogram.png boat50-histogram
+
+
+compress 90 boat boat90
+save boat90.jpg boat90
+histogram boat90 boat90-histogram
+save boat90-histogram.png boat90-histogram
+
+# sepia
+sepia boat boat-sepia
+save boat-sepia.png boat-sepia
+
+# sepia with split
+sepia boat boat-sepia70 split 70
+save boat-sepia70.jpg boat-sepia70
+histogram boat-sepia70 boat-sepia70-histogram
+save boat-sepia70-histogram.png boat-sepia70-histogram
+
+# extract components
+red-component boat boat-red
+save boat-red.png boat-red
+
+red-component boat boat-red-split split 80
+save boat-red-split.png boat-red-split
+histogram boat-red-split boat-red-split-histogram
+save boat-red-split-histogram.png boat-red-split-histogram
+
+# color-correct with split
+color-correct boat boat-color-correct-split split 70
+save boat-color-correct-split.png boat-color-correct-split
+histogram boat-color-correct-split boat-color-correct-histogram-split
+save boat-color-correct-histogram-split.png boat-color-correct-histogram-split
+
+# levels-adjust
+levels-adjust 20 100 255 boat boat-levels-adjust
+save boat-levels-adjust.png boat-levels-adjust
+histogram boat-levels-adjust boat-levels-adjust-histogram
+save boat-levels-adjust-histogram.png boat-levels-adjust-histogram
+
+# levels-adjust
+levels-adjust 70 100 200 boat boat-levels-adjust2
+save boat-levels-adjust2.png boat-levels-adjust2
+histogram boat-levels-adjust2 boat-levels-adjust2-histogram
+save boat-levels-adjust2-histogram.png boat-levels-adjust2-histogram

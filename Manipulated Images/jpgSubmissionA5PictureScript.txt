@@ -1,0 +1,57 @@
+# Load input image as boat
+load boat.jpg boat
+save boat.jpg boat
+
+# compress
+compress 20 boat boat-compress20
+save boat-compress20.jpg boat-compress20
+histogram boat-compress20 boat-compress20-histogram
+save boat-compress20-histogram.png boat-compress20-histogram
+
+compress 50 boat boat-compress50
+save boat-compress50.jpg boat-compress50
+histogram boat-compress50 boat-compress50-histogram
+save boat-compress50-histogram.png boat-compress50-histogram
+
+
+compress 90 boat boatCompress90
+save boatCompress90.jpg boatCompress90
+histogram boatCompress90 boat90-boatCompress90
+save boatCompress90-histogram.png boatCompress90-histogram
+
+# sepia
+sepia boat boat-sepia
+save boat-sepia.png boat-sepia
+
+# sepia with split
+sepia boat boat-sepia70 split 70
+save boat-sepia70.jpg boat-sepia70
+histogram boat-sepia70 boat-sepia70-histogram
+save boat-sepia70-histogram.png boat-sepia70-histogram
+
+# extract components
+red-component boat boat-red
+save boat-red.png boat-red
+
+red-component boat boat-red-split split 80
+save boat-red-split.png boat-red-split
+histogram boat-red-split boat-red-split-histogram
+save boat-red-split-histogram.png boat-red-split-histogram
+
+# color-correct with split
+color-correct boat boat-color-correct-split split 70
+save boat-color-correct-split.png boat-color-correct-split
+histogram boat-color-correct-split boat-color-correct-histogram-split
+save boat-color-correct-histogram-split.png boat-color-correct-histogram-split
+
+# levels-adjust
+levels-adjust 20 100 255 boat boat-levels-adjust
+save boat-levels-adjust.png boat-levels-adjust
+histogram boat-levels-adjust boat-levels-adjust-histogram
+save boat-levels-adjust-histogram.png boat-levels-adjust-histogram
+
+# levels-adjust
+levels-adjust 70 100 200 boat boat-levels-adjust2
+save boat-levels-adjust2.png boat-levels-adjust2
+histogram boat-levels-adjust2 boat-levels-adjust2-histogram
+save boat-levels-adjust2-histogram.png boat-levels-adjust2-histogram

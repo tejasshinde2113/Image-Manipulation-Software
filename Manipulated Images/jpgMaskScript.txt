@@ -1,0 +1,87 @@
+# Load input image as boat
+load boat.jpg boat
+save boat.jpg boat
+
+load boatMask.jpg boatMask
+
+
+blur boat boatMask boatBlurMask
+save boatBlurMask.jpg boatBlurMask
+
+blur boat boatBlur
+save boatBlur.jpg boatBlur
+
+blur boat boatBlur30 split 30
+save boatBlur30.jpg boatBlur30
+
+sharpen boat boatMask boatSharpenMask
+save boatSharpenMask.jpg boatSharpenMask
+
+sharpen boat boatSharpen
+save boatSharpen.jpg boatSharpen
+
+sharpen boat boatSharpen30 split 30
+save boatSharpen30.jpg boatSharpen30
+
+sepia boat boatMask boatSepiaMask
+save boatSepiaMask.jpg boatSepiaMask
+
+sepia boat boatSepia
+save boatSepia.jpg boatSepia
+
+sepia boat boatSepia30 split 30
+save boatSepia30.jpg boatSepia30
+
+red-component boat boatMask boatRedComponentMask
+save boatRedComponentMask.jpg boatRedComponentMask
+
+red-component boat boatRedComponent
+save boatRedComponent.jpg boatRedComponent
+
+red-component boat boatRedComponent30 split 30
+save boatRedComponent30.jpg boatRedComponent30
+
+blue-component boat boatMask boatBlueComponentMask
+save boatBlueComponentMask.jpg boatBlueComponentMask
+
+blue-component boat boatBlueComponent
+save boatBlueComponent.jpg boatBlueComponent
+
+blue-component boat boatBlueComponent30 split 30
+save boatBlueComponent30.jpg boatBlueComponent30
+
+green-component boat boatMask boatGreenComponentMask
+save boatGreenComponentMask.jpg boatGreenComponentMask
+
+green-component boat boatGreenComponent
+save boatGreenComponent.jpg boatGreenComponent
+
+green-component boat boatGreenComponent30 split 30
+save boatGreenComponent30.jpg boatGreenComponent30
+
+luma-component boat boatMask boatLumaComponentMask
+save boatLumaComponentMask.jpg boatLumaComponentMask
+
+luma-component boat boatLumaComponent
+save boatLumaComponent.jpg boatLumaComponent
+
+luma-component boat boatLumaComponent30 split 30
+save boatLumaComponent30.jpg boatLumaComponent30
+
+value-component boat boatMask boatValueComponentMask
+save boatValueComponentMask.jpg boatValueComponentMask
+
+value-component boat boatValueComponent
+save boatValueComponent.jpg boatValueComponent
+
+value-component boat boatValueComponent30 split 30
+save boatValueComponent30.jpg boatValueComponent30
+
+intensity-component boat boatMask boatIntensityComponentMask
+save boatIntensityComponentMask.jpg boatIntensityComponentMask
+
+intensity-component boat boatIntensityComponent
+save boatIntensityComponent.jpg boatIntensityComponent
+
+intensity-component boat boatIntensityComponent30 split 30
+save boatIntensityComponent30.jpg boatIntensityComponent30
